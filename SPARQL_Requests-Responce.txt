@@ -1,0 +1,57 @@
+SPARQL REQUEST #1 (Request the STB state if all the parameters are in Green zone):
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX net: <http://purl.org/toco/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/>
+PREFIX tnmo: <http://127.0.0.1/tnmo/>
+SELECT *
+WHERE
+{
+  ?Monitoring tnmo:device_parameter <http://127.0.0.1/tnmo/Device_1/> .
+  ?Monitoring tnmo:parameter_detailes ?Detail .
+  ?Detail rdf:subject ?Parameter .
+  FILTER (?Parameter = <http://127.0.0.1/tnmo/Parameter_1/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_3/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_7/>) .
+  ?Parameter rdf:label ?Parameter_name .
+  ?Detail rdf:object ?Value .
+ }
+
+
+ANSWER:
+
+Monitoring	Detail	Parameter	Parameter_name	Value
+<http://127.0.0.1/tnmo/Parameter_M_3/>	t71	<http://127.0.0.1/tnmo/Parameter_3/>	tnmo:ram_available	1 000 000 kb
+<http://127.0.0.1/tnmo/Parameter_M_7/>	t78	<http://127.0.0.1/tnmo/Parameter_7/>	tnmo:stb_hdd_usage	15%
+<http://127.0.0.1/tnmo/Parameter_M_1/>	t91	<http://127.0.0.1/tnmo/Parameter_1/>	tnmo:cpu_usage		30%
+
+
+SPARQL REQUEST #2 (Request the STB state if any parameter is in Yellow or Red zone):
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX net: <http://purl.org/toco/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/>
+PREFIX tnmo: <http://127.0.0.1/tnmo/>
+SELECT *
+WHERE
+{
+  ?Monitoring tnmo:device_parameter <http://127.0.0.1/tnmo/Device_2/> .
+  ?Monitoring tnmo:parameter_detailes ?Detail .
+  ?Detail rdf:subject ?Parameter .
+  FILTER (?Parameter = <http://127.0.0.1/tnmo/Parameter_1/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_3/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_7/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_2/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_4/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_5/> || ?Parameter = <http://127.0.0.1/tnmo/Parameter_6/>) .
+  ?Parameter rdf:label ?Parameter_name .
+  ?Detail rdf:object ?Value .
+  
+  }
+
+
+ANSWER:
+
+Monitoring	Detail	Parameter	Parameter_name	Value
+<http://127.0.0.1/tnmo/Parameter_M_12/>	t66	<http://127.0.0.1/tnmo/Parameter_5/>	tnmo:ram_MemFree	1 000 kb
+<http://127.0.0.1/tnmo/Parameter_M_13/>	t69	<http://127.0.0.1/tnmo/Parameter_6/>	tnmo:ram_MemAvailable	1 000 kb
+<http://127.0.0.1/tnmo/Parameter_M_10/>	t74	<http://127.0.0.1/tnmo/Parameter_3/>	tnmo:ram_available	1 000 kb
+<http://127.0.0.1/tnmo/Parameter_M_11/>	t79	<http://127.0.0.1/tnmo/Parameter_4/>	tnmo:ram_MemTotal	10 000 000 kb
+<http://127.0.0.1/tnmo/Parameter_M_14/>	t83	<http://127.0.0.1/tnmo/Parameter_7/>	tnmo:stb_hdd_usage	99%
+<http://127.0.0.1/tnmo/Parameter_M_8/>	t85	<http://127.0.0.1/tnmo/Parameter_1/>	tnmo:cpu_usage	95%
+<http://127.0.0.1/tnmo/Parameter_M_9/>	t92	<http://127.0.0.1/tnmo/Parameter_2/>	tnmo:cpu_usage_top	App_1:75%;App_2:5%;App_3:5%;App_4:5%;App_5:5%;
