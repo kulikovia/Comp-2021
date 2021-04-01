@@ -1,0 +1,6 @@
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_parameters.nq>;
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_device.nq>;
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_monitoring.nq>;

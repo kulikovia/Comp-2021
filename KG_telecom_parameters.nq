@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+xmlns:geo="http://www.w3.org/2003/01/geo/"
+xmlns:net="http://purl.org/toco/"
+xmlns:tnmo="http://127.0.0.1/tnmo/"
+>
+
+<!--parameters definitions-->
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_2/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:cpu_usage_top</rdf:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_1/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:cpu_usage</rdf:label>
+<tnmo:parameter_hierarchy><rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_2/" /></tnmo:parameter_hierarchy>
+</rdf:Description>
+
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_3/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:ram_available</rdf:label>
+<tnmo:parameter_hierarchy><rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_4/" /></tnmo:parameter_hierarchy>
+<tnmo:parameter_hierarchy><rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_5/" /></tnmo:parameter_hierarchy>
+<tnmo:parameter_hierarchy><rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_6/" /></tnmo:parameter_hierarchy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_4/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:ram_MemTotal</rdf:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_5/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:ram_MemFree</rdf:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_6/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:ram_MemAvailable</rdf:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1/tnmo/Parameter_7/">
+<rdf:type>tnmo:parameter_type</rdf:type>
+<rdf:label>tnmo:stb_hdd_usage</rdf:label>
+</rdf:Description>
+
+</rdf:RDF>
