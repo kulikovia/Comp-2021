@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:b1de17b6-5663-471b-a0b8-32b2213bd81d#"
+     xml:base="urn:webprotege:ontology:b1de17b6-5663-471b-a0b8-32b2213bd81d"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:b1de17b6-5663-471b-a0b8-32b2213bd81d"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyCondition"/>
+        <rdfs:label>tnpo:hasCondition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyGoal"/>
+        <rdfs:label>tnpo:hasGoal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasRuleSet -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasRuleSet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:label>tnpo:hasRuleSet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AincludeAction -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AincludeAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:label>tnpo:includeAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AincludeRule -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AincludeRule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRule"/>
+        <rdfs:label>tnpo:includeRule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AuseAction -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AuseAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3AAction"/>
+        <rdfs:label>tnpo:useAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AuseRuleInvocation -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AuseRuleInvocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnpo/tnpo%3ARuleInvocation"/>
+        <rdfs:label>tnpo:useRuleInvocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3AAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyCondition"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyGoal"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRule"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3ARuleInvocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label>tnpo:hasDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasID -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3AAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyCondition"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyGoal"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRule"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3ARuleInvocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tnpo:hasID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AhasName -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnpo/tnpo%3AhasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3AAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyCondition"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyGoal"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRule"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnpo/tnpo%3ARuleInvocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tnpo:hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnpo%3APolicy -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo%3APolicy"/>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3AAction -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3AAction">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:label>tnpo:Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3APolicyAction -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3APolicyAction">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3APolicyCondition -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3APolicyCondition">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:label>tnpo:PolicyCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3APolicyGoal -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3APolicyGoal">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:label>tnpo:PolicyGoal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3APolicyRule -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3APolicyRule">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet"/>
+        <rdfs:label>tnpo:PolicyRule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3APolicyRuleSet">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo%3APolicy"/>
+        <rdfs:label>tnpo:PolicyRuleSet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnpo/tnpo%3ARuleInvocation -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnpo/tnpo%3ARuleInvocation">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnpo/tnpo%3APolicyAction"/>
+        <rdfs:label>tnpo:RuleInvocation</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
